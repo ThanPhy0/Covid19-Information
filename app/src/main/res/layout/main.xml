@@ -1,0 +1,410 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff020536"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/covidTitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/covid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Covid-19 "
+            android:textStyle="italic|bold"
+            android:textSize="30sp"
+            android:textColor="#ffffd918"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/covid"
+            android:text="Myanmar"
+            android:textStyle="italic|bold"
+            android:textSize="30sp"
+            android:textColor="#ffffffff"/>
+
+        <Button
+            android:id="@+id/btnInfo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:background="@drawable/circle_button"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/covidTitlebar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true"
+        android:background="#ffff0000"/>
+
+    <RelativeLayout
+        android:id="@+id/tit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/covidTitlebar">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            card_view:cardBackgroundColor="#ff374063"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="6dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/photo"/>
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title"
+                    android:textStyle="bold"
+                    android:textColor="#fffffc16"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="4"/>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fffffc16"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="4"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/fistLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tit"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardiew"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        card_view:cardBackgroundColor="#ff374063"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="6dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/r3"
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvResult1"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#ffff5df1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tvResult1small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="#ffff5df1"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:text="ပိုးတွေ့"
+                    android:textColor="#ffff5df1"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#2b2b2b"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvResult2"
+                        android:textSize="20sp"
+                        android:textColor="#ffff101b"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tvResult2small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="#ffff101b"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/title3"
+                    android:text="သေဆုံး"
+                    android:textColor="#ffff101b"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#2b2b2b"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvResult3"
+                        android:textSize="20sp"
+                        android:textColor="#ff12ff2f"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tvResult3small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="#ff12ff2f"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/title4"
+                    android:text="ကောင်း"
+                    android:textColor="#ff12ff2f"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lastCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:gravity="center"
+        android:layout_below="@+id/fistLinear">
+
+        <LinearLayout
+            android:id="@+id/secondLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="2dp"
+            card_view:cardBackgroundColor="#ff374063"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="6dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+            android:id="@+id/sountkyi"
+            android:textColor="#ff11fff3"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_below="@+id/tv1title"/>
+
+            <TextView
+                android:id="@+id/title5"
+            android:text="စောင့်ကြည့်လူနာ"
+            android:textColor="#ff11fff3"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/secondLinear"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="2dp"
+            card_view:cardBackgroundColor="#ff374063"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="6dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+            android:layout_toRightOf="@+id/r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+            android:id="@+id/datkhwalpee"
+            android:textColor="#ff12ff2f"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_below="@+id/tv2title"/>
+
+            <TextView
+                android:id="@+id/title6"
+            android:text="ဓါတ်ခွဲစစ်ဆေးပြီး"
+            android:textColor="#ff12ff2f"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text"
+        android:textColor="#ffffffff"
+        android:layout_below="@+id/lastCard"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:shadowColor="#ff000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="4"/>
+
+</LinearLayout>

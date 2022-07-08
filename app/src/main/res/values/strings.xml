@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">COVID-19 Myanmar</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="text">မြန်မာနိုင်ငံအတွင်း Coronavirus (COVID-19)\nကူးစက်ရောဂါဖြစ်ပွားနေမှုနှင့်ပက်သက်ပြီး\nရရှိထားသော အချက်အလက်များဖြစ်ပါတယ်။</string>
+    <string name="title">Coronavirus Disease (COVID-19) အချက်အလက်</string>
+</resources>
